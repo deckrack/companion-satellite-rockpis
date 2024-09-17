@@ -15,7 +15,7 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
 8. If prompted, Skip generating other locales
 9. Set the hostname
 
-    `sudo hostnamectl hostname sat-$RANDOM`
+    `sudo hostnamectl hostname sat-0`
 
 10. Get more swap space
 
@@ -35,3 +35,7 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
 
 14. Teminal should report “config ok” and then “Update is complete”
 
+### Unique hostnames
+On a DHCP network, each Rock Pi should have a unique hostname. This command will randomize the hostname.
+
+`sudo hostnamectl hostname sat-$RANDOM`
