@@ -36,7 +36,7 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
 
 15. Teminal should report “config ok” and then “Update is complete”
 
-### Unique hostnames
+## Unique hostnames
 On a DHCP network, each Rock Pi should have a unique hostname. This command will randomize the hostname.
 
 `sudo hostnamectl hostname sat-$RANDOM`
