@@ -17,23 +17,24 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
 
     `sudo hostnamectl hostname sat-0`
 
-10. Get more swap space
+10. Reboot with `sudo reboot` to make the hostname stick
+11. Get more swap space
 
     `fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile`
 
     `mount -o remount,size=2G /tmp/`
 
-11. Run the Satellite install script
+12. Run the Satellite install script
     
     `curl https://raw.githubusercontent.com/bitfocus/companion-satellite/main/pi-image/install.sh | bash`
 
-12. Install a specific Satellite version
+13. Install a specific Satellite version
 
     `sudo satellite-update`
 
-13. Choose `latest-beta`
+14. Choose `latest-beta`
 
-14. Teminal should report “config ok” and then “Update is complete”
+15. Teminal should report “config ok” and then “Update is complete”
 
 ### Unique hostnames
 On a DHCP network, each Rock Pi should have a unique hostname. This command will randomize the hostname.
