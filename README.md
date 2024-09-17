@@ -9,7 +9,7 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
      `SSH -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@rockpi-s`
    
 4. Provide the Armbian default password `1234`
-5. When prompted, change the default password to `satellite`
+5. When prompted, create root password `satellite`
 6. When prompted, make a new user with Name `Satellite`, username `satellite`, password `satellite`
 7. When prompted, accept the recommended user language.
 8. If prompted, Skip generating other locales
