@@ -40,3 +40,14 @@ Prebuilt companion-satellite image for RAXDA Rock Pi S
 On a DHCP network, each Rock Pi should have a unique hostname. This command will randomize the hostname.
 
 `sudo hostnamectl hostname sat-$RANDOM`
+
+## Turn a microSD card into a .img on macOS
+
+1. Identify the microSD disk attached to your mac
+
+   `diskutil list`
+
+2. Copy the disk into a compressed .img file. Substitute the disk name in for `diskX`.
+   
+   `sudo dd if=/dev/diskX bs=64K | gzip -c > companion-satellite-rockpis.img.gz`
+
